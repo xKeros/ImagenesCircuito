@@ -25,7 +25,7 @@ app.post("/uploadMultipleImages", (req, res) => {
     .catch((err) => res.status(500).send(err));
 });
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("API subida de imagenes");
 })
 
 app.listen(port, () => {
