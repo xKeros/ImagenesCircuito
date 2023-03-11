@@ -24,6 +24,9 @@ app.post("/uploadMultipleImages", (req, res) => {
     .then((urls) => res.send(urls))
     .catch((err) => res.status(500).send(err));
 });
+app.get("/", (req, res) => {
+  res.send("Hello World");
+})
 
 app.listen(port, () => {
   console.log(`nodemailerProject is listening at http://localhost:${port}`);
